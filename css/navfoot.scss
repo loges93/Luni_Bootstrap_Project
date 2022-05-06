@@ -1,0 +1,73 @@
+$main_color1: #03045e;
+$main_color2: #0077b6;
+$main_color3: #00b4d8;
+$main_color4: #90e0ef;
+$main_color5: #FF7C37;
+body{
+    overflow-x: hidden;
+}
+
+
+@keyframes boxIn{
+    25%{
+        border-bottom: solid 2px $main_color3;
+    }
+    50%{
+        border-left: solid 2px $main_color3;
+    }
+    75%{
+        border-top: solid 2px $main_color3;
+    }
+    100%{
+        border: solid 2px $main_color3;
+    }
+
+}
+.nav{
+    background-image: linear-gradient(45deg, $main_color1, $main_color2);
+    img{
+        max-height: 4em;
+        margin-right: 1rem;
+    }
+    a{
+        
+        font-family: 'Varela Round', sans-serif;
+        letter-spacing: .3rem;
+        
+    }
+}
+.nav-item a{
+    margin: .5rem;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: .3rem;
+
+}
+.nav-item{
+    border: solid 2px transparent;
+}
+.nav-item:hover{
+    animation: boxIn 2s;
+}
+@media only screen and(max-width: 500px){
+    .icons{
+        flex-direction: column;
+        a img{
+            max-width: 50px;
+            margin: .2rem;
+        }
+    }
+}
+footer{
+    min-height: 150px;
+    background-image: linear-gradient(45deg, $main_color2, $main_color1);
+    margin-top: 3rem;
+    a{
+        color: white;
+        max-width: 100px;
+        margin: .5rem;
+        text-decoration: none;
+    }
+    a img{
+        margin: 1rem;
+    }
+}

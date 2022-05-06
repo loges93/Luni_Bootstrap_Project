@@ -1,0 +1,28 @@
+@keyframes headingAnim {
+  from {
+    transform: translateX(-400px) translateY(-200px) rotateZ(-90deg);
+  }
+  to {
+    transform: translateX(0px) translateY(0) rotateZ(0deg);
+  }
+}
+
+h2[class='display-4'] {
+  width: fit-content;
+  color: #FF7C37;
+  margin: 2rem;
+}
+
+form {
+  margin: 10%;
+}
+
+label {
+  color: #0077b6;
+}
+
+.main_btn {
+  background-color: #0077b6;
+  color: white;
+}
+/*# sourceMappingURL=contact.css.map */

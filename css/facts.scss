@@ -1,0 +1,153 @@
+$main_color1: #03045e;
+$main_color2: #0077b6;
+$main_color3: #00b4d8;
+$main_color4: #90e0ef;
+$main_color5: #FF7C37;
+body, html{
+    overflow-x: hidden;
+}
+@keyframes topHeader{
+    from{
+        color: white;
+        transform: translateX(-500px);
+    }
+    to{
+        color: $main_color1;
+        transform: translateX(0);
+    }
+}
+@keyframes bottomHeader{
+    from{
+        color: white;
+        transform: translateX(500px);
+    }
+    to{
+        color: $main_color1;
+        transform: translateX(0);
+    }
+}
+.facts-banner{
+    background-image: url("../images/facts-banner.jpg");
+    min-height: 680px;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h4{
+        text-align: center;
+        min-width: 200px;
+        position: relative;
+        bottom: 3rem;
+        color: #03045e;
+        font-weight: bold;
+        backdrop-filter: blur(20px);
+        padding: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    :nth-child(1){
+        animation: topHeader 2s;
+    }
+    :nth-child(2){
+        animation: bottomHeader 2s;
+    }
+}
+@mixin centerfy{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin card(){
+    border-radius: 15px;
+    position: absolute;
+    height: 400px;
+    width: 250px;
+    h4{
+        font-size: 2rem;
+        color: white;
+        z-index: 3;
+    }
+    
+}
+.flip-container{
+    @include centerfy;
+    perspective: 1000px;
+    margin: 2rem;
+   
+
+}
+.image-flip{
+    @include card;
+    position: relative; 
+    min-height: 400px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: 2s ease;
+    
+
+}
+.flip-container:hover .image-flip{
+    transform: rotateY(180deg);
+    
+}
+.flip-container:hover .middle-flip{
+    transform: rotateX(180deg);
+}
+.middle-flip .back{
+    p{
+        transform: rotateZ(180deg);
+    }
+}
+
+.front{
+    @include card;
+    backface-visibility: hidden;
+    text-align: center;
+    background: blue;
+    p{
+        text-align: center;
+        position: absolute; 
+        color: white;
+        z-index: 10;
+        margin: .5rem;
+    }
+     img{
+        @include card;
+        top:0;
+        left: 0;
+    }
+}
+.back{
+    @include card();
+    position: relative;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: $main_color5;
+    display:flex;
+    align-items: center;
+    p{
+        text-align: center;
+        position: absolute; 
+        color: white;
+        z-index: 10;
+        margin: .5rem;
+    }
+}
+.flipper{
+    padding: 4rem;
+    background-color: $main_color2;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+@media only screen and(max-width:400){
+    .facts-banner{
+        max-width: 95%;
+    }
+}
+
+
+
+
+
+

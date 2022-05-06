@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/my-script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/about.scss">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/navfoot.css">
+    <title>About</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg nav navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/moon_icon.png" alt="">Luni</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mg-2 my-lg-0" style="">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="facts.html">Facts</a>
+          </li>
+          
+        </ul> 
+      </div>
+    </div>
+</nav>
+  <div class="banner-container">
+
+      <div class="banner">
+        <img src="images/class.jpg" alt="">
+        <h6 class="display-4">Attend Our LunoCon Seminar!</h6>
+        <p class="date lead">Thursday May 5, 2022 6pm</p>
+        <div class="signup">
+          <p class="lead">Register Now</p>
+          <input type="text" class="text" placeholder="example@gmail.com">
+          <input type="button" value="Register">
+        </div>
+        <input class="lead" onclick="closeBanner()"type="button" value="Close">
+      </div>
+      
+</div>
+</div>
+<div class="blurry">
+    <div class="container-fluid d-flex justify-content-center earth-main-content">
+        <div class="row flex-wrap">
+          <h4 class="display-5">Home Sweet Home</h4>
+          <div class="col d-flex justify-content-center">
+            <img class="img-fluid"src="images/spaceman.jpg">
+          </div>
+          <div class="col">
+            <p class="lead text-center">
+              Earth is really great and when we say great we mean really great as opposed to the rest of the solar system and most others we've observed so far the universe just doesn't seem like it wants us anywhere else.
+              Most other places don't provide the appropriate environments for us to survive for long periods.  
+              Our own solar system which is about 287.46 billion km wide is mainly full of large gas giants with no solid surface to stand on which poses a problem for us bipedal creatures.
+              Of the planets that do have walking surfaces they too have their own host of issues including severe temperatures, thin air, and high levels of solar radiation not to mention travel times that open all types of possibilites for problems. While the moon does have some of these issues the distance makes it more practical.
+            </p>
+            <p class="lead text-center">
+              While this may seem discouraging we here at Luni believe in a practical and safer approach to the expansion.
+              Starting with commercial moon flights and eventially much more we can slowly dip our toes in the cosmos.
+              Mars may be popular but when it takes six months to travel to the red planet the moon seems much more economically feasable.
+              Not that we can't make it to Mars someday we just believe that trying somewhere closer could give us a better understanding of the effects it has on humans long term and have better access to supplies from earth should anything happen.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container moon-main-content">
+        <div class="row">
+          <div class="container-fluid col">
+            <h4 class="display-4">LunarLink</h4>
+            <p class="lead">
+              <img class="img-fluid col"src="images/space-ship.jpg">
+              How will we get there? 
+              Using Luni's new rocket system LunarLink which houses 4 passengers we'll get there in no time and safely at that.
+              LunarLink is the vision of comfort and upon arrival LunarLink provides plenty of window space to see everything on the lunarscape clearly.
+              It takes about 10 minutes for our shuttle to break into the exosphere after which time you will be prompted for any refreshments you may want.
+              There are no tv's in the cabin because we believe you should be fully mindful of your experience.
+              When passengers are ready for bed a bolted sleeping bag cacoon will be provided that will let you doze off without floating away.
+            </p>
+          </div>
+        </div>
+      </div>  
+      <div class="suits-main-content container-fluid">
+        <div class="flex-row d-flex justify-content-center flex-wrap">
+          <div class="col d-flex justify-content-center"><img src="images/suit.jpg" alt=""></div>
+          <div class="col d-flex justify-content-center align-items-center flex-column">
+            <h4 class="display-4">Suit Up</h4>
+            <p class="lead">
+              With our advanced newer version of the Mark V Lunosuit you can ride in style and comfort.
+              The Mark V has an internal lining of Pima Cotton that perfectly comforms to any body style.
+              It also internally air conditioned providing a level of comfort way beyond casual garments.
+              The outside is fitted with high grade Lunron which is 100x stronger than Demron providing protection from high energy alpha and beta radiation as well as low energy gamma.
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <footer class="container-fluid d-flex justify-content-end foot">
+    <div class="col d-flex flex-column justify-content-around">
+      <a class="lead" href="home.html">Home</a>
+      <a class="lead" href="about.html">About</a>
+      <a class="lead" href="contact.html">Contact</a>
+      <a class="lead" href="facts.html">Facts</a>
+    </div>
+    <div class="col d-flex justify-content-end align-items-center icons">
+      <a href=""><img src="images/fb.png" alt=""></a>
+      <a href=""><img src="images/tweet.png" alt=""></a>
+      <a href=""><img src="images/reddit.png" alt=""></a>
+    </div>
+    
+  </footer>
+</body>
+</html>

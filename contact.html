@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/contact.scss">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navfoot.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg nav navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/moon_icon.png" alt="">Luni</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mg-2 my-lg-0" style="">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="facts.html">Facts</a>
+              </li>
+              
+            </ul> 
+          </div>
+        </div>
+    </nav>
+    <h2 class="display-4">Contact Us</h2>
+    <div class="container">
+        <form class="main-form row g-3">
+            <div class="col-md-6">
+              <label for="inputFirst" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="nameInput">
+            </div>
+            <div class="col-md-6">
+              <label for="inputLast" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="inputLast">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+            </div>
+            <div class="mb-3">
+                <label for="inquiry" class="form-label">Inquiry</label>
+                <textarea class="form-control" id="inquiry" rows="3"></textarea>
+              </div>
+            <div class="col-12">
+              <button type="submit" class="btn main_btn">Submit</button>
+            </div>
+          </form>
+    </div>
+    <footer class="container-fluid d-flex justify-content-end foot">
+        <div class="col d-flex flex-column justify-content-around">
+          <a class="lead" href="home.html">Home</a>
+          <a class="lead" href="about.html">About</a>
+          <a class="lead" href="contact.html">Contact</a>
+          <a class="lead" href="facts.html">Facts</a>
+        </div>
+        <div class="col d-flex justify-content-end align-items-center icons">
+          <a href=""><img src="images/fb.png" alt=""></a>
+          <a href=""><img src="images/tweet.png" alt=""></a>
+          <a href=""><img src="images/reddit.png" alt=""></a>
+        </div>
+        
+      </footer>
+</body>
+</html>
